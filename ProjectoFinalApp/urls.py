@@ -3,9 +3,10 @@ from ProjectoFinalApp import views
 
 urlpatterns = [
     
-    path('',views.Home, name = 'Home'),
-    path('services/',views.Services, name = 'Services'),
-    path('shop/',views.Shop, name = 'Shop'),
-    path('blog/',views.Blog, name = 'Blog'),
-    path('contact/',views.Contact, name = 'Contact')
+    path('',views.Home, name = 'home'),
+    path('services/',views.Services, name = 'services'),
+    path('shop/',views.Shop, name = 'shop'),
+    path('contact/',views.Contact, name = 'contact'),
+    path('blog/',views.Blog, name = 'blog'),
+    
 ]
