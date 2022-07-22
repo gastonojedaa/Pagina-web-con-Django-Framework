@@ -9,8 +9,7 @@ def Home(request):
 def Shop(request):
     return render(request,"ProjectoFinalApp/shop.html")
 
-def Blog(request):
-    return render(request,"ProjectoFinalApp/blog.html")
+
 
 def Contact(request):
     return render(request,"ProjectoFinalApp/contact.html")

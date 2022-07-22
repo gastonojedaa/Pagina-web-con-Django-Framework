@@ -1,13 +1,12 @@
 from django.urls import path
-from ProjectoFinalApp import views
+from . import views
 from django.conf import settings
 from django.conf.urls.static import static
 
 urlpatterns = [
+    path('',views.Blog, name = 'blog'),
+    path('categoria/<int:category_id>/',views.categoriaFilter, name = 'categoria'), #para filtrar por categorias
     
-    path('',views.Home, name = 'home'),
-    path('shop/',views.Shop, name = 'shop'),
-    path('contact/',views.Contact, name = 'contact'),    
 ]
 
 urlpatterns+=static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT) #poder abrir la imagen al clickear
