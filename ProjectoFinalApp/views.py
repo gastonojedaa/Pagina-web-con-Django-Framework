@@ -11,5 +11,3 @@ def Shop(request):
 
 
 
-def Contact(request):
-    return render(request,"ProjectoFinalApp/contact.html")
